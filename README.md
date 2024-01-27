@@ -1,5 +1,5 @@
 # Predict Lead Score
-<h3>Building a lead scoring model using PyCaret to increase the ROI on marketing campaigns.
+<h3>Building a lead scoring model using PyCaret to increase the ROI on marketing campaigns.</h3>
 
 Importing the Lead Conversion dataset from Kaggle. The dataset contains over 9,000 leads with customer features such as:
 <li>Lead origin</li>
@@ -13,13 +13,13 @@ Importing the Lead Conversion dataset from Kaggle. The dataset contains over 9,0
 
 After conducting exploratory data analysis I found several columns that have many missing values. However, PyCaret will automatically handle the missing values. 
 
-<h3>Visually exploring the relationship between time spent on the website and the activity score along with the source of lead:
+<h3>Visually exploring the relationship between time spent on the website and the activity score along with the source of lead:</h3>
 
 <img src="Files/2.png">
 
 Leads coming from the “Add Forms” are likely to convert into sales irrespective of the time spent on the website or the score. The leads originating through API or the landing page of the website tell a different story. A higher score combined with a higher time spent on the website is more likely to generate leads into final sales.
 
-<h3> Data Preparation
+<h3> Data Preparation </h3>
 Initializing the setup function in PyCaret automatically profiles the dataset and infers the data types for all input variables.
 
 <img src="Files/3.png">
@@ -34,7 +34,7 @@ Training process by using compare_models functionality. This function trains all
 
 The best model based on AUC is Catboost Classifier with an average 10-fold cross-validated AUC of **0.9864**
 
-<h3> Model Analysis
+<h3> Model Analysis </h3>
 Utilizing an AUC — ROC curve as it is used as a performance measurement for the classification problems at various threshold settings. 
 ROC is a probability curve and AUC represents the degree or measure of 
 
@@ -44,7 +44,7 @@ ROC is a probability curve and AUC represents the degree or measure of
 
 <img src="Files/5.png">
 
-<h3>SHAP Values
+<h3>SHAP Values</h3>
 Unlike AUC-ROC, SHAP values do not tell us anything about model performance. It interprets the impact of having a certain value for a given feature in comparison to the prediction made if that feature took some baseline value. 
 
 <ul>The y-axis, in the chart below, has all the important features of the model</ul>
@@ -53,12 +53,12 @@ Unlike AUC-ROC, SHAP values do not tell us anything about model performance. It 
 
 <img src="Files/6.png">
 
-<h3> Feature Importance Plot
+<h3> Feature Importance Plot</h3>
 A feature importance plot is just another way to interpret the results of the model and tell us if the feature is important.
 
 <img src="Files/7.png">
 
-<h3>Confusion Matrix
+<h3>Confusion Matrix</h3>
 Comparing the predictions with actual labels and divide them into four quadrants using a confusion matrix:
 
 * True Positive (Prediction: Conversion, Actual: Conversion)
@@ -73,7 +73,7 @@ Comparing the predictions with actual labels and divide them into four quadrants
   
 <img src="Files/8.png">
 
-<h3> The business value of this model and why should we use this model?
+<h3> The business value of this model and why should we use this model?</h3>
 To attach business value to this model the following assumptions have to be made:
 
 * Lead converted into sales will yield $120 in Revenue for the first year
@@ -86,7 +86,7 @@ Haven't fed in the assumptions of cost/profit yet hence the model is not a busin
 
 Train, select, and optimize models using business metrics in order to achieve the business goal.
 
-<h3> Adding Custom Metric in PyCaret
+<h3> Adding Custom Metric in PyCaret</h3>
 
 <img src="Files/9.png">
 
@@ -96,11 +96,11 @@ A new column Profit is added this time and Light Gradient Boosting Machine is th
 
 The total number of customers is still the same (2,773 customers in the test set), what’s changed is now how the model is making errors over false positives and false negatives. Let’s put some $ value against it, using the same assumptions (as above):
 
-pic
+<img src="Files/pic.png">
 
 * The profit is now $89,925 compared to $88,830 when Catboost Classifier was used (1.2% increase)
 
-<h3> Use the model to generate a lead score
+<h3> Use the model to generate a lead score</h3>
 Applying this model to new leads to generate the score since the best model has been selected:
 
 <img src="Files/11.png">
