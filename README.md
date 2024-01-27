@@ -1,5 +1,5 @@
 # Predict Lead Score
-## Building a lead scoring model using PyCaret to increase the ROI on marketing campaigns.
+<h3>Building a lead scoring model using PyCaret to increase the ROI on marketing campaigns.
 
 Importing the Lead Conversion dataset from Kaggle. The dataset contains over 9,000 leads with customer features such as:
 <li>Lead origin</li>
@@ -9,7 +9,7 @@ Importing the Lead Conversion dataset from Kaggle. The dataset contains over 9,0
 <li>Demographics information</li>
 <li>Target column Converted indicating 1 for conversion and 0 for no conversion</li>
 
-<img src="Predict-Lead-Score/Files/1.png">
+<img src="Files/1.png">
 
 After conducting exploratory data analysis I found several columns that have many missing values. However, PyCaret will automatically handle the missing values. 
 
