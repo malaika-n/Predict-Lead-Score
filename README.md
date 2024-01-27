@@ -53,7 +53,7 @@ Unlike AUC-ROC, SHAP values do not tell us anything about model performance. It 
 
 <img src="Files/6.png">
 
-<h3> Feature Importance Plot</h3>
+<h3> Feature Importance Plot </h3>
 A feature importance plot is just another way to interpret the results of the model and tell us if the feature is important.
 
 <img src="Files/7.png">
@@ -73,7 +73,7 @@ Comparing the predictions with actual labels and divide them into four quadrants
   
 <img src="Files/8.png">
 
-<h3> The business value of this model and why should we use this model?</h3>
+<h3> The business value of this model and why should we use this model? </h3>
 To attach business value to this model the following assumptions have to be made:
 
 * Lead converted into sales will yield $120 in Revenue for the first year
@@ -86,7 +86,7 @@ Haven't fed in the assumptions of cost/profit yet hence the model is not a busin
 
 Train, select, and optimize models using business metrics in order to achieve the business goal.
 
-<h3> Adding Custom Metric in PyCaret</h3>
+<h3> Adding Custom Metric in PyCaret </h3>
 
 <img src="Files/9.png">
 
@@ -100,7 +100,7 @@ The total number of customers is still the same (2,773 customers in the test set
 
 * The profit is now $89,925 compared to $88,830 when Catboost Classifier was used (1.2% increase)
 
-<h3> Use the model to generate a lead score</h3>
+<h3> Use the model to generate a lead score </h3>
 Applying this model to new leads to generate the score since the best model has been selected:
 
 <img src="Files/11.png">
