@@ -76,11 +76,11 @@ Comparing the predictions with actual labels and divide them into four quadrants
 <h3> The business value of this model and why should we use this model?
 To attach business value to this model the following assumptions have to be made:
 
-* Lead converted into sales will yield \$120 in Revenue for the first year
-* Time and efforts spent on chasing prioritized leads (as predicted by the model) is \$15
+* Lead converted into sales will yield $120 in Revenue for the first year
+* Time and efforts spent on chasing prioritized leads (as predicted by the model) is $15
 * Opportunities missed by the model (False negatives) yield negative $120 as opportunity cost
 
-Profit = \$88,830 
+Profit = $88,830 
 
 Haven't fed in the assumptions of cost/profit yet hence the model is not a business-smart model.
 
@@ -98,7 +98,7 @@ The total number of customers is still the same (2,773 customers in the test set
 
 pic
 
-* The profit is now \\$89,925 compared to \\$88,830 when Catboost Classifier was used (1.2% increase)
+* The profit is now $89,925 compared to $88,830 when Catboost Classifier was used (1.2% increase)
 
 <h3> Use the model to generate a lead score
 Applying this model to new leads to generate the score since the best model has been selected:
